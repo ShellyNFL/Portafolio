@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="pendientes.css">
+    <script src="pendientes.js"></script>
+    <nav>
+        <ul>
+            <li><a href="../portafolio.html">Inicio</a></li>
+            <li><a href="../about.html">About me</a></li>
+            <li><a href="../Practicas/Practica2/P2_Tiburones.html">Práctica 2</a></li>
+            <li><a href="../Practicas/Practica3/EnlacesPractica3.html">Práctica 3</a></li>
+            <li><a href="../Practicas/Practica4/P4.html">Práctica 4</a></li>
+            <li><a href="../Practicas/Practica5/FormularioDinamico.html">Práctica 5</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <div class="container">
+        <h2>Pendientes</h2>
+        <input type="text" id="nuevaTarea" placeholder="Agregar nueva tarea...">        
+        <button id="boton1" onclick="agrega()">Añadir</button>
+        <button id="boton2" onclick="borra()">Borrar Lista</button>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    
+</body>
+</html>

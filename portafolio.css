@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen a la izquierda inferior */
+.imagen-izquierda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36.5%; 
+    height: auto;
+}
+
+/* Imagen a la derecha superior 
+.imagen-derecha {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%; 
+    height: auto;
+}*/
+
+.contenido {
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Superponer sobre las imágenes */
+}
+
+.contenido h1 {
+    font-size: 128px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.contenido h1 span {
+    text-align: center;
+    color: #D32157;
+    font-size: 30px;
+    display: block; /*Lo que se hace es que se convierte en un bloque*/
+    margin-top: 10px;/*y esta es la distancia respecto a titulo*/   
+}
+
+.contenido p {
+    margin-top: 100;
+    margin-left: 150px;
+    font-size: 20px;
+    max-width: 600px;
+    color: #ddd;
+    text-align: right;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 100; /*posicion respecto a capas*/
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0 ;
+    margin-right: 75px;
+    display: flex;
+    justify-content: center;
+    background-color:none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #c14067; /* Fondo para menú */
+    padding: 10px 20px;
+    border-radius: 15px; 
+    font-family: 'Arial Black', 'Arial Bold';
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+

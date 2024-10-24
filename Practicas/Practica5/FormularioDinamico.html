@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <nav>
+        <ul>
+            <li><a href="../../portafolio.html">Inicio</a></li>
+            <li><a href="../../about.html">About me</a></li>
+            <li><a href="../Practica2/P2_Tiburones.html">Práctica 2</a></li>
+            <li><a href="../Practica3/EnlacesPractica3.html">Práctica 3</a></li>
+            <li><a href="../Practica4/P4.html">Práctica 4</a></li>
+            <li><a href="../../ListTask/pendientes.html">Lista de pendientes</a></li>
+        </ul>
+    </nav>
+<head>
+        <img src="flor.png" alt="ImagendeFlores" class="header-img">
+        <h1>REGISTRO EN TABLA DINÁMICA</h1>
+    
+    <link rel="stylesheet" type="text/css" href="p5TablaDinamica.css">
+    <script type="text/javascript" src="InputsIntoDinamicTable.js"></script>
+</head>
+<body>
+    <!--<h1>REGISTRO EN TABLA DINÁMICA</h1>-->
+
+    <h2>Ingresa tu información</h2>
+    <form action="">
+        <br><h3>Información de contacto</h3>
+        <label for ="nombre">Nombre:</label>
+        <input type="text" name="name" id="nombre" required> <br>
+
+        <label for ="email">Email:</label>
+        <input type="email" name="email" id="email" required> <br>
+
+        <h3>Paquete a elegir</h3>
+        <input type="checkbox" name="paquete" id="docena" value="Docena">
+        <label for="docena">Docena de flores</label><br>
+        <input type="checkbox" name="paquete" id="cincuenta" value="Cincuenta">
+        <label for="cincuenta">Cincuenta flores</label><br>
+        <input type="checkbox" name="paquete" id="ciento" value="Ciento">
+        <label for="ciento">Un ciento de rosas</label><br>
+        
+        <h3>Tipo de flor a entregar</h3>
+        <input type="radio" name="tipoFlor" id="rosa" value="Rosa" required>
+        <label for="rosa">Rosa</label><br>
+        <input type="radio" name="tipoFlor" id="peonia" value="Peonia">
+        <label for="peonia">Peonia </label><br>
+        <input type="radio" name="tipoFlor" id="clavel" value="Clavel">
+        <label for="clavel">Clavel</label><br>
+
+        <h3>Escoja fecha y horario de preferencia para su entrega</h3>
+        <label for ="fecha">Consulta:</label>
+        <input type="datetime-local" name="fecha" id="fecha" value="Cita" required> <br>
+
+        <h3>Elija color para su envoltura</h3>
+        <label for ="color">Color:</label>
+        <input type="color" name="color" id="color" value="Color" required> <br>
+
+        <h3>Elija que tan tierno quiere la decoración</h3>
+        <label for ="tierno">Cuteness:</label>
+        <input type="range" name="tierno" id="tierno" 
+                min="0" max="100" value="100" step="10" required> <br><br>
+    </form>
+    <button type="button" onclick="registrar()"> Registrar </button>
+    
+    <p id="confirmacion"></p>
+    <table id="pedido"></table>
+    
+</body>
+</html>

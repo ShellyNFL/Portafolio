@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+    <link rel="stylesheet" href="../Practica5/p5TablaDinamica.css">
+    <script type="text/javascript" src="P4JavaScript.js"> </script>
+    <nav>
+        <ul>
+            <li><a href="../../portafolio.html">Inicio</a></li>
+            <li><a href="../../about.html">About me</a></li>
+            <li><a href="../Practica2/P2_Tiburones.html">Práctica 2</a></li>
+            <li><a href="../Practica3/EnlacesPractica3.html">Práctica 3</a></li>
+            <li><a href="../Practica5/FormularioDinamico.html">Práctica 5</a></li>
+            <li><a href="../../ListTask/pendientes.html">Lista de pendientes</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <H1>Ejercicio 1</H1>
+    <p class="pp4">
+        Desarrollar un programa en JS que reciba como parámetro una calificación numérica a través de un
+        elemento input tipo número dentro de un formulario HTML. El archivo JS debe tener una función que
+        haga la evaluación de acuerdo a la siguiente tabla:
+    </p>
+    <img src="imgej1.png", id="imgp4",alt="No se encontro la imágenes">
+    <form>
+        Escribe tu calificacion: <input type="number" name="calificaciones" id="cali" step="0.5" min="0" max="11"> <br>
+    </form>
+    <button type="button" onclick="evaluar()"> Evaluar </button>
+    <p id="r1"></p> <br>
+
+    <H1>Ejercicio 2</H1>
+    <p class="pp4">
+        Desarrollar un script en JavaScript que reciba un número a través de un input tipo número dentro de un formulario HTML
+        y calcule el factorial (de forma recursiva) de ese número.
+        
+        Considere que si n es positivo el factorial es n! = n*(n-1)!, 
+        si n es cero por definición el factorial es 1 y,
+        si n es negativo el factorial no está definido.
+        
+        Escriba el resultado en un párrafo.</p>
+    <form>
+        Dame el número del que quieras factorial: <input type="number" name="factorial" id="factorialRecursivo"><br>
+    </form>
+    <button type="button" onclick="leer()">Sacar factorial</button>
+    <p id="r2"></p>
+
+    <h1>Ejercicio 3</h1>
+    <p class="pp4">
+        Desarrolle un programa en JavaScript que reciba información de un formulario de HTML. 
+        El formulario deberá tener las siguientes entradas y el tipo de input indicado.
+
+        Nombre (text)
+        Correo (email)
+        Edad (number)
+        Género (radio)
+        Fecha de nacimiento (date)
+        Color favorito (color)
+        Imprimir en un párrafo toda la información recibida de formulario.
+    </p>
+    <p class="pp4">Llenna la siguiente información:</p>
+    <!--Radio buttons let a user select only one of a limited number of choices-->
+    <form>
+        
+        Nombre: <input type="text" name="name" id="name"> <br>
+        Email: <input type="email" name="email" id="email"> <br>
+        Edad: <input type="number" name="age" id="age"> <br>
+        Género: <br>
+        <input type="radio" name="gender" id="female">Mujer<br>
+        <input type="radio" name="gender" id="male">Hombre<br>
+        <input type="radio" name="gender" id="other">Prefiero no mencionarlo<br>
+        Fecha de nacimiento: <input type="date" name="birthdate" id="birthdate"> <br>
+        Color favorito: <input type="color" name="color" id="favcolor"> <br>
+    </form>
+    <button type="button" onclick="formulario()">Registrar</button>
+    <p id="r3"> Tu información es: </p>
+    
+</body>
+</html>

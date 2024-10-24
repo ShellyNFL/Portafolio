@@ -1,0 +1,184 @@
+body {
+    background: #cfcfcd;
+    margin: 50px auto;
+    max-width: 1200px;
+    width: 70%; /* Ocupa todo el ancho disponible */
+    padding: 0 20px; /* Añade algo de relleno a los lados */
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-img {
+    width: 110px; 
+    height: auto;
+    margin-right: 20px; /*Espacio entre la img y el título*/
+    float: left; /*Pone mi img a la izq*/
+}
+
+h1 {
+    text-align: center;
+    color: #E53935;
+    font-family: 'Arial Black', 'Arial Bold';
+    font-size: 90px;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 1; /*HACE QUE SE VEA MENOS INTERLINEADO*/
+}
+
+h2{
+    text-align: center;
+    font-family: 'Arial Black', 'Arial Bold';
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h3{
+
+    text-align: center;
+    font-family: 'Arial Black', 'Arial Bold';
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#pedido tbody tr:hover td {
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+ 
+#pedido {
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+#pedido td, #pedido th {
+    font-size: 1em;
+    border: 1px solid #600117;
+    padding: 3px 7px 2px 7px;
+  }
+
+#pedido th {
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #600117;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+
+#pedido tr.renglon1 td {
+    color: #000000;
+    background-color: #df8aa4;
+    
+  }
+  
+#pedido tr.renglon2 td {
+    color: #000000;
+    background-color: #fddde3;
+  }
+#imgp4{
+    width: 550px;
+    height: auto; /*manten posicion original*/
+}
+.pp4{
+    text-align: justify;
+}
+
+#bp3{
+    text-align: center;
+}
+
+.imgp2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Esto es lo que hace que se ajuste sin distorsionarse */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: black; /*fondo para menu*/
+    padding: 10px 20px;
+    border-radius: 15px; 
+    font-family: 'Arial Black', 'Arial Bold';
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    text-transform: uppercase;
+    font-size:10px ;
+}
+
+nav ul li a:hover {
+    background-color: #E53935;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*About me pag*/
+.container-am {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+.about-me {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.about-me img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+.about-me #text-am {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contacto {
+    text-align: center;
+}
+.contacto a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.contacto a:hover {
+    text-decoration: underline;
+}
+/*practica 6*/
+.center {
+    text-align: center;
+}
+
+.center-twitter-list {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}

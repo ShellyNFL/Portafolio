@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /*espacio de abajo del input text hasta el otro componente*/
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#boton1 {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#boton1:hover {
+    background-color: #218838;
+}
+
+#boton2{
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #dc3545;
+    color: white; /*color letra*/
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#boton2:hover {
+    background-color: #c82333;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+li:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.completado {
+    text-decoration: line-through;
+    color: gray;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+/*  ------------------------------------------------REFERENCIAS------------------------------------------
+W3Schools online HTML editor. (n.d.). https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor
+
+Basic concepts of flexbox - CSS: Cascading Style Sheets | MDN. (2024, July 26). MDN Web Docs. 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+Alexcamachogz. (2020, July 28). Flexbox explicado con manzanitas 🍎🍏. Platzi. https://platzi.com/blog/flexbox-explicado-con-manzanitas/
+
+W3Schools.com. (n.d.). https://www.w3schools.com/css/css3_borders.asp
+*/
